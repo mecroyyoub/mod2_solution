@@ -1,0 +1,92 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+<title>
+     Assignment Solution for Module 2
+    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+}
+@media screen and (max-width:600px){
+  .container {
+    flex-direction:column
+  }
+ }
+ @media screen and (max-width:600px){
+  .container {
+    flex-direction:column
+  }
+  .second{
+    order: 3;
+  }
+  .third{
+    order: 2
+  }
+}
+.wrap {
+  display: flex;
+}
+.box {
+  height: 150px;
+  border: 1px solid green;
+  flex: 1;
+  margin: 25px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 36px;
+
+}
+.box:first-child {
+  order: 1;
+  background-color: 5f5959;
+}
+.box:nth-child(2) {
+  order: 2;
+}
+.box:nth-child(3) {
+  order: 7;
+
+}
+@media screen and (max-width: 760px) {
+  .wrap {
+    flex-direction: column;
+  }
+  .box:nth-child(2) {
+    order: 3;
+  }
+  .box:nth-child(3) {
+    order: 2;
+    background-color: 5f5959;
+  }
+  .{
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="se">
+  <h2 align="center"> Our Menu</h2>
+</div>
+
+<div class="container">
+  <div class="box first">
+    Suchi
+  </div>
+  <div class="box second">
+    Beef
+  </div>
+  <div class="box third">
+    Checken
+  </div>
+</div>
+
+</body>
+</html>
